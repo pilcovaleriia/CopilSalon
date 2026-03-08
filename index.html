@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copil Salon — Estética & Spa Premium</title>
+    <meta name="description"
+        content="Copil Salon — Tu destino de belleza premium en Lima. Servicios de manicura, pedicura, cabello y spa con los mejores productos y profesionales.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===================== WHATSAPP FLOATING BUTTON ===================== -->
+    <a href="https://wa.me/51929024013?text=Hola%20Copil%20Salon%2C%20quiero%20reservar%20una%20cita%20%F0%9F%92%96"
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">Copil<span>Salon</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Opiniones</a></li>
+                <li>
+                    <a href="#reservar" class="nav-cta">
+                        <i class="fas fa-calendar-check"></i> Reservar Cita
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop&q=80"
+                alt="Salón de belleza elegante" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Tu Belleza, Nuestra <em>Pasión</em></h1>
+            <p class="hero-description">
+                Descubre una experiencia de belleza única con nuestros servicios premium de manicura,
+                pedicura y cabello. Déjate consentir por manos expertas en Lima.
+            </p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn-primary">
+                    Explorar Servicios ✦
+                </a>
+                <a href="#reservar" class="btn-secondary">
+                    <i class="fas fa-calendar-check"></i> Reservar Cita
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Descubre más</span>
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICIOS ===================== -->
+    <section class="services-section" id="servicios">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-subtitle">Nuestros Servicios</div>
+                <h2 class="section-title">Servicios de Belleza Premium</h2>
+                <p class="section-description">
+                    Ofrecemos una amplia gama de tratamientos de belleza con productos de la más alta calidad para
+                    consentirte.
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="service-tabs reveal">
+                <button class="service-tab active" data-tab="manicura">Manicura</button>
+                <button class="service-tab" data-tab="pedicura">Pedicura</button>
+                <button class="service-tab" data-tab="cabello">Cabello</button>
+                <button class="service-tab" data-tab="extras">Extras</button>
+            </div>
+
+            <!-- ======= MANICURA ======= -->
+            <div class="service-content active" id="manicura">
+                <div class="service-carousel reveal">
+                    <div class="carousel-track" id="carousel-manicura">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop&q=80"
+                                alt="Manicura con esmalte rosado elegante">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&h=400&fit=crop&q=80"
+                                alt="Uñas de gel con diseño floral">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop&q=80"
+                                alt="Manicura acrílica con decoración">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop&q=80"
+                                alt="Uñas babyboomer elegantes">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" data-carousel="carousel-manicura">‹</button>
+                    <button class="carousel-btn carousel-next" data-carousel="carousel-manicura">›</button>
+                    <div class="carousel-dots" data-carousel="carousel-manicura"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-scale delay-1">
+                        <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <h3>Esmalte Regular</h3>
+                        <p>Aplicación clásica de esmalte con amplia variedad de colores. Incluye limado, cutícula y
+                            acabado brillante.</p>
+                        <div class="service-price">S/ 25</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-2">
+                        <span class="popular-badge">Popular</span>
+                        <div class="service-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Uñas de Gel</h3>
+                        <p>Acabado duradero y brillante con gel de alta calidad. Resistente a golpes y con secado bajo
+                            lámpara UV.</p>
+                        <div class="service-price">S/ 60</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-3">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Rubber Base</h3>
+                        <p>Base flexible de rubber que protege y fortalece tu uña natural. Perfecto para uñas débiles o
+                            quebradizas.</p>
+                        <div class="service-price">S/ 50</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-4">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Uñas Acrílicas</h3>
+                        <p>Extensiones acrílicas con diseño personalizado. Resistentes y duraderas con la forma que más
+                            te guste.</p>
+                        <div class="service-price">S/ 80</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-5">
+                        <span class="popular-badge">Premium</span>
+                        <div class="service-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Uñas Esculpidas</h3>
+                        <p>Arte en tus manos con técnica de esculpido profesional. Diseños elaborados con acabado
+                            perfecto.</p>
+                        <div class="service-price">S/ 100</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-6">
+                        <div class="service-icon"><i class="fas fa-star"></i></div>
+                        <h3>Polygel</h3>
+                        <p>La combinación perfecta entre gel y acrílico. Ligero, flexible y con un acabado natural
+                            impecable.</p>
+                        <div class="service-price">S/ 70</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-7">
+                        <span class="popular-badge">Tendencia</span>
+                        <div class="service-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Babyboomer</h3>
+                        <p>El clásico degradado francés modernizado. Efecto elegante y sofisticado de rosa a blanco
+                            natural.</p>
+                        <div class="service-price">S/ 90</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= PEDICURA ======= -->
+            <div class="service-content" id="pedicura">
+                <div class="service-carousel reveal">
+                    <div class="carousel-track" id="carousel-pedicura">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop&q=80"
+                                alt="Pedicura spa con esmalte elegante">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop&q=80"
+                                alt="Tratamiento de pedicura profesional">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop&q=80"
+                                alt="Pedicura con diseño decorativo">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" data-carousel="carousel-pedicura">‹</button>
+                    <button class="carousel-btn carousel-next" data-carousel="carousel-pedicura">›</button>
+                    <div class="carousel-dots" data-carousel="carousel-pedicura"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-scale delay-1">
+                        <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Pedicura Clásica</h3>
+                        <p>Tratamiento completo con exfoliación, hidratación y esmalte regular. Incluye corte y limpieza
+                            de cutículas.</p>
+                        <div class="service-price">S/ 35</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-2">
+                        <span class="popular-badge">Popular</span>
+                        <div class="service-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Pedicura con Gel</h3>
+                        <p>Acabado duradero con gel premium. Incluye spa de pies con sales relajantes y masaje
+                            hidratante.</p>
+                        <div class="service-price">S/ 70</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-3">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Pedicura Rubber</h3>
+                        <p>Base rubber flexible para pies. Protege tus uñas mientras lucen impecables por semanas.</p>
+                        <div class="service-price">S/ 60</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-4">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Pedicura Acrílica</h3>
+                        <p>Extensiones acrílicas para pies con acabado profesional. Ideal para lucir uñas perfectas en
+                            sandalias.</p>
+                        <div class="service-price">S/ 90</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-5">
+                        <div class="service-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Pedicura Esculpida</h3>
+                        <p>Diseños esculpidos premium para tus pies. Cada uña es una obra de arte personalizada.</p>
+                        <div class="service-price">S/ 110</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-6">
+                        <div class="service-icon"><i class="fas fa-star"></i></div>
+                        <h3>Pedicura Polygel</h3>
+                        <p>Tecnología polygel aplicada en pies. Ligero, cómodo y con un acabado natural sorprendente.
+                        </p>
+                        <div class="service-price">S/ 80</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-7">
+                        <span class="popular-badge">Tendencia</span>
+                        <div class="service-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Pedicura Babyboomer</h3>
+                        <p>El elegante degradado babyboomer en tus pies. Sofisticación y delicadeza en cada paso.</p>
+                        <div class="service-price">S/ 100</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= CABELLO ======= -->
+            <div class="service-content" id="cabello">
+                <div class="service-carousel reveal">
+                    <div class="carousel-track" id="carousel-cabello">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop&q=80"
+                                alt="Salón de cabello profesional">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1521590832167-7228f6cf5ba8?w=600&h=400&fit=crop&q=80"
+                                alt="Coloración profesional de cabello">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop&q=80"
+                                alt="Peinado elegante para mujer">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=400&fit=crop&q=80"
+                                alt="Tratamiento de keratina para cabello">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" data-carousel="carousel-cabello">‹</button>
+                    <button class="carousel-btn carousel-next" data-carousel="carousel-cabello">›</button>
+                    <div class="carousel-dots" data-carousel="carousel-cabello"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-scale delay-1">
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <h3>Corte de Cabello</h3>
+                        <p>Corte personalizado según tu tipo de rostro y estilo. Incluye lavado, corte y secado
+                            profesional.</p>
+                        <div class="service-price">S/ 40</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-2">
+                        <span class="popular-badge">Popular</span>
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Tinte Completo</h3>
+                        <p>Coloración completa con tintes profesionales de marcas premium. Incluye tratamiento
+                            protector.</p>
+                        <div class="service-price">S/ 120</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-3">
+                        <div class="service-icon"><i class="fas fa-star"></i></div>
+                        <h3>Mechas / Highlights</h3>
+                        <p>Técnica de mechas o balayage para un look luminoso y dimensional. Efecto sol natural.</p>
+                        <div class="service-price">S/ 180</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-4">
+                        <span class="popular-badge">Premium</span>
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Alisado / Keratina</h3>
+                        <p>Tratamiento de keratina profesional para un cabello liso, sedoso y libre de frizz por meses.
+                        </p>
+                        <div class="service-price">S/ 250</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-5">
+                        <div class="service-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Tratamiento Capilar</h3>
+                        <p>Hidratación profunda, nutrición y reparación intensiva. Devuelve la vida a tu cabello dañado.
+                        </p>
+                        <div class="service-price">S/ 80</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-6">
+                        <div class="service-icon"><i class="fas fa-ring"></i></div>
+                        <h3>Peinados Especiales</h3>
+                        <p>Peinados para eventos, bodas y ocasiones especiales. Incluye prueba previa y acabado
+                            duradero.</p>
+                        <div class="service-price">S/ 100</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= EXTRAS ======= -->
+            <div class="service-content" id="extras">
+                <div class="service-carousel reveal">
+                    <div class="carousel-track" id="carousel-extras">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop&q=80"
+                                alt="Tratamiento facial hidratante para mujer">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&h=400&fit=crop&q=80"
+                                alt="Maquillaje profesional elegante">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop&q=80"
+                                alt="Tratamiento de spa relajante">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" data-carousel="carousel-extras">‹</button>
+                    <button class="carousel-btn carousel-next" data-carousel="carousel-extras">›</button>
+                    <div class="carousel-dots" data-carousel="carousel-extras"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-scale delay-1">
+                        <div class="service-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Diseño de Cejas</h3>
+                        <p>Perfilado, depilación con hilo o cera, y tinte de cejas. Marco perfecto para tu mirada.</p>
+                        <div class="service-price">S/ 30</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-2">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Maquillaje Profesional</h3>
+                        <p>Look completo para cualquier ocasión con productos de alta gama. Social, de noche o novia.
+                        </p>
+                        <div class="service-price">S/ 120</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-3">
+                        <span class="popular-badge">Relax</span>
+                        <div class="service-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Facial Hidratante</h3>
+                        <p>Limpieza profunda, exfoliación y mascarilla hidratante. Tu piel renovada y luminosa.</p>
+                        <div class="service-price">S/ 80</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-4">
+                        <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Depilación con Cera</h3>
+                        <p>Depilación profesional con cera tibia de diferentes zonas. Piel suave por semanas.</p>
+                        <div class="service-price">S/ 25</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-5">
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Extensiones de Pestañas</h3>
+                        <p>Pestañas pelo a pelo o en volumen. Mirada intensa y natural que dura semanas.</p>
+                        <div class="service-price">S/ 100</div>
+                    </div>
+                    <div class="service-card reveal-scale delay-6">
+                        <span class="popular-badge">Spa</span>
+                        <div class="service-icon"><i class="fas fa-water"></i></div>
+                        <h3>Spa de Manos y Pies</h3>
+                        <p>Tratamiento relajante completo con exfoliación, parafina y masaje. Hidratación total.</p>
+                        <div class="service-price">S/ 75</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section class="about-section" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=750&fit=crop&q=80"
+                        alt="Interior del salón Copil Salon">
+                    <div class="about-float-card">
+                        <div class="number counter" data-target="8" data-suffix="+">0</div>
+                        <div class="label">Años de<br>experiencia</div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <div class="section-subtitle">Sobre Nosotros</div>
+                    <h2>Donde la Belleza se Convierte en <span>Arte</span></h2>
+                    <p class="lead">
+                        En Copil Salon, creemos que cada mujer merece sentirse hermosa y empoderada. Nuestro equipo de
+                        profesionales certificadas trabaja con pasión y dedicación para brindarte una experiencia
+                        de belleza inolvidable.
+                    </p>
+                    <p class="lead">
+                        Utilizamos productos de las mejores marcas internacionales y técnicas de vanguardia
+                        para garantizar resultados excepcionales en cada visita.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="icon"><i class="fas fa-award"></i></span>
+                            <span>Profesionales certificadas</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="icon"><i class="fas fa-gem"></i></span>
+                            <span>Productos premium</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="icon"><i class="fas fa-spa"></i></span>
+                            <span>Ambiente femenino y acogedor</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="icon"><i class="fas fa-heart"></i></span>
+                            <span>Atención personalizada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="gallery-section" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">Nuestro Trabajo</div>
+                <h2 class="section-title">Galería de Belleza</h2>
+                <p class="section-description">
+                    Inspírate con algunos de nuestros trabajos favoritos y descubre lo que podemos hacer por ti.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-scale delay-1">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=500&fit=crop&q=80"
+                        alt="Manicura profesional de gel en tonos rosados">
+                </div>
+                <div class="gallery-item reveal-scale delay-2">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=300&fit=crop&q=80"
+                        alt="Pedicura spa con esmalte elegante">
+                </div>
+                <div class="gallery-item reveal-scale delay-3">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7228f6cf5ba8?w=400&h=300&fit=crop&q=80"
+                        alt="Coloración de cabello profesional">
+                </div>
+                <div class="gallery-item reveal-scale delay-4">
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=400&h=300&fit=crop&q=80"
+                        alt="Maquillaje profesional femenino">
+                </div>
+                <div class="gallery-item reveal-scale delay-5">
+                    <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=400&h=300&fit=crop&q=80"
+                        alt="Tratamiento de cabello con keratina">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIOS ===================== -->
+    <section class="testimonials-section" id="testimonios">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">Testimonios</div>
+                <h2 class="section-title">Lo que Dicen Nuestras Clientas</h2>
+                <p class="section-description">
+                    La satisfacción de nuestras clientas es nuestra mayor recompensa.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal delay-1">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Increíble experiencia. Las uñas de gel me duraron tres semanas perfectas.
+                        El ambiente es hermoso y el equipo es súper profesional. ¡100% recomendado!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MG</div>
+                        <div class="testimonial-info">
+                            <h4>María García</h4>
+                            <span>Clienta frecuente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal delay-2">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Me hice el babyboomer y quedé enamorada. Es el diseño más elegante que he tenido.
+                        Las chicas son artistas de verdad. Ya no voy a otro lugar."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AL</div>
+                        <div class="testimonial-info">
+                            <h4>Ana López</h4>
+                            <span>Clienta desde 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal delay-3">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "El tratamiento de keratina dejó mi cabello como de comercial.
+                        Además, la pedicura spa fue lo más relajante que he experimentado. ¡Volveré pronto!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SR</div>
+                        <div class="testimonial-info">
+                            <h4>Sofía Ramírez</h4>
+                            <span>Reseña verificada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROMO BANNER ===================== -->
+    <section class="promo-section reveal">
+        <div class="container">
+            <div class="promo-content">
+                <h2>✨ Primera Visita con 20% de Descuento</h2>
+                <p>Agenda tu primera cita y recibe un descuento especial en cualquiera de nuestros servicios.</p>
+                <a href="#reservar" class="btn-primary">
+                    <i class="fas fa-calendar-check"></i> Reservar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESERVAR CITA ===================== -->
+    <section class="booking-section" id="reservar">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">Agenda tu Cita</div>
+                <h2 class="section-title">Reserva tu Momento de Belleza</h2>
+                <p class="section-description">
+                    Elige tu servicio, fecha y hora preferida. ¡Te esperamos para consentirte!
+                </p>
+            </div>
+
+            <form class="booking-form reveal" id="booking-form">
+                <div class="booking-form-inner">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="book-name"><i class="fas fa-user"></i> Nombre</label>
+                            <input type="text" id="book-name" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="book-phone"><i class="fas fa-phone"></i> Teléfono</label>
+                            <input type="tel" id="book-phone" placeholder="Tu número de celular" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-service"><i class="fas fa-sparkles"></i> Servicio de Interés</label>
+                        <select id="book-service" required>
+                            <option value="">Selecciona un servicio</option>
+                            <optgroup label="💅 Manicura">
+                                <option>Esmalte Regular — S/ 25</option>
+                                <option>Uñas de Gel — S/ 60</option>
+                                <option>Rubber Base — S/ 50</option>
+                                <option>Uñas Acrílicas — S/ 80</option>
+                                <option>Uñas Esculpidas — S/ 100</option>
+                                <option>Polygel — S/ 70</option>
+                                <option>Babyboomer — S/ 90</option>
+                            </optgroup>
+                            <optgroup label="🦶 Pedicura">
+                                <option>Pedicura Clásica — S/ 35</option>
+                                <option>Pedicura con Gel — S/ 70</option>
+                                <option>Pedicura Rubber — S/ 60</option>
+                                <option>Pedicura Acrílica — S/ 90</option>
+                                <option>Pedicura Esculpida — S/ 110</option>
+                                <option>Pedicura Polygel — S/ 80</option>
+                                <option>Pedicura Babyboomer — S/ 100</option>
+                            </optgroup>
+                            <optgroup label="💇‍♀️ Cabello">
+                                <option>Corte de Cabello — S/ 40</option>
+                                <option>Tinte Completo — S/ 120</option>
+                                <option>Mechas / Highlights — S/ 180</option>
+                                <option>Alisado / Keratina — S/ 250</option>
+                                <option>Tratamiento Capilar — S/ 80</option>
+                                <option>Peinados Especiales — S/ 100</option>
+                            </optgroup>
+                            <optgroup label="🌸 Extras">
+                                <option>Diseño de Cejas — S/ 30</option>
+                                <option>Maquillaje Profesional — S/ 120</option>
+                                <option>Facial Hidratante — S/ 80</option>
+                                <option>Depilación con Cera — S/ 25</option>
+                                <option>Extensiones de Pestañas — S/ 100</option>
+                                <option>Spa de Manos y Pies — S/ 75</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="book-date"><i class="fas fa-calendar"></i> Fecha Preferida</label>
+                            <input type="date" id="book-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="book-time"><i class="fas fa-clock"></i> Hora Preferida</label>
+                            <input type="time" id="book-time" min="09:00" max="20:00" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-message"><i class="fas fa-comment"></i> Mensaje (opcional)</label>
+                        <textarea id="book-message"
+                            placeholder="¿Algún detalle o diseño especial que desees? Cuéntanos..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit btn-book">
+                        <i class="fab fa-whatsapp"></i> Confirmar Cita por WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACTO + MAPA ===================== -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-subtitle">Encuéntranos</div>
+                <h2 class="section-title">Contáctanos y Visítanos</h2>
+                <p class="section-description">
+                    Estamos en el corazón de San Isidro. ¡Ven a conocernos!
+                </p>
+            </div>
+
+            <div class="contact-map-grid">
+                <!-- Izquierda: Info de contacto -->
+                <div class="contact-info reveal-left">
+                    <h3>Información de Contacto</h3>
+                    <p>Visítanos en nuestro salón o contáctanos por cualquier medio. ¡Te esperamos!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Dirección</h4>
+                                <span>Av. Javier Prado 1234, San Isidro<br>Lima, Perú</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Teléfono</h4>
+                                <span>+51 929 024 013</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <span>hola@copilsalon.pe</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Horario</h4>
+                                <span>Lun - Sáb: 9:00 AM - 8:00 PM<br>Dom: 10:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/51929024013" class="social-link whatsapp-social" target="_blank"
+                            rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Derecha: Google Maps -->
+                <div class="contact-map reveal-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9607!2d-77.0365!3d-12.0964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35b5c1d%3A0x15a3b29e5e11d0b5!2sAv.%20Javier%20Prado%2C%20San%20Isidro%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Ubicación Copil Salon en Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">Copil<span>Salon</span></a>
+                    <p>Tu destino de belleza premium en Lima. Ofrecemos servicios de la más alta calidad para que te
+                        sientas y luzcas increíble cada día. 💖</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/51929024013" class="social-link" target="_blank" rel="noopener"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Servicios</h4>
+                    <div class="footer-links">
+                        <a href="#servicios">Manicura</a>
+                        <a href="#servicios">Pedicura</a>
+                        <a href="#servicios">Cabello</a>
+                        <a href="#servicios">Maquillaje</a>
+                        <a href="#servicios">Spa</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Enlaces</h4>
+                    <div class="footer-links">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#galeria">Galería</a>
+                        <a href="#testimonios">Opiniones</a>
+                        <a href="#reservar">Reservar Cita</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Horarios</h4>
+                    <div class="footer-links">
+                        <a>Lun - Vie: 9:00 - 20:00</a>
+                        <a>Sábado: 9:00 - 18:00</a>
+                        <a>Domingo: 10:00 - 16:00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Copil Salon. Todos los derechos reservados.</span>
+                <span>Hecho con 💖 para ti</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
