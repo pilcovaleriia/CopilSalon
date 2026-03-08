@@ -4,6 +4,28 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---- Preloader ----
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        preloader.classList.add('fade-out');
+      }, 500); // Slight delay for smoother feel
+    });
+  }
+
+  // ---- Scroll Progress Bar ----
+  const scrollProgressBar = document.getElementById('scroll-progress-bar');
+  const addScrollProgress = () => {
+    if (scrollProgressBar) {
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scroll = `${totalScroll / windowHeight * 100}%`;
+      scrollProgressBar.style.width = scroll;
+    }
+  }
+  window.addEventListener('scroll', addScrollProgress);
+
   // ---- Set minimum date to today ----
   const dateInput = document.getElementById('book-date');
   if (dateInput) {
@@ -189,14 +211,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---- Parallax on hero shapes ----
+  // ---- Parallax on hero shapes and background ----
   const shapes = document.querySelectorAll('.shape');
+  const heroBgImg = document.querySelector('.hero-bg-img');
+
   window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
+
+    // Shapes parallax
     shapes.forEach((shape, index) => {
       const speed = (index + 1) * 0.3;
       shape.style.transform = `translateY(${scrolled * speed * 0.1}px)`;
     });
+
+    // Hero Background parallax
+    if (heroBgImg && scrolled < window.innerHeight) {
+      heroBgImg.style.transform = `translateY(${scrolled * 0.4}px)`;
+    }
   });
 
   // ---- Counter Animation ----
@@ -266,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
       whatsappMsg += `\n💖 Enviado desde la web de Copil Salon`;
 
       const encodedMsg = encodeURIComponent(whatsappMsg);
-      window.open(`https://wa.me/51999999999?text=${encodedMsg}`, '_blank');
+      window.open(`https://wa.me/51929024013?text=${encodedMsg}`, '_blank');
     });
   }
 
